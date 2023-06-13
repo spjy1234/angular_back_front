@@ -1,0 +1,23 @@
+<h1>Person</h1>
+<div *ngIf="persons" class="person">
+  <div *ngFor="let person of persons" class="person-card">
+    <div>{{person.id}}</div>
+    <div>{{person.firstName}}</div>
+    <div>{{person.lastName}}</div>
+    <div>{{person.age}}</div>
+    <div>{{person.sex}}</div>
+  </div>
+</div>
+<!--<div class="form">-->
+<!--  <form action="person.component.ts">-->
+<!--    <label>firstName:</label><input name="firstName" type="text" class="form-input"><br>-->
+<!--    <label>lastName:</label><input name="lastName" type="text" class="form-input"><br>-->
+<!--    <label>age:</label><input name="age" type="text" class="form-input"><br>-->
+<!--    <label>sex:</label><input name="sex" type="text" class="form-input"><br>-->
+<!--    <button (click)="sendPerson()" type="submit" mat-raised-button >Button</button>-->
+<!--  </form>-->
+<!--</div>-->
+
+<div class="form">
+
+</div>

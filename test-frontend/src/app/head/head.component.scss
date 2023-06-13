@@ -1,0 +1,23 @@
+.head{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+
+}
+
+.head-header{
+  display: flex;
+  font-size: 55px;
+  align-items: center;
+}
+
+.head-link{
+  display: flex;
+  align-items: center;
+
+}
+
+.link{
+  text-decoration-line: none;
+  margin-right: 10px;
+}
