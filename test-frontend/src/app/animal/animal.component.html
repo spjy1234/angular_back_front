@@ -1,1 +1,39 @@
-<p>animal works!</p>
+<h1>Animal</h1>
+
+<div class="test">
+  <div class="animal-menu">
+    <div *ngFor="let menu of animalMenu">
+      <div (click)="selectAnimal(menu.id)">{{menu.code}}</div>
+    </div>
+  </div>
+
+  <div class="animal" *ngIf="dogSelect">
+    <div *ngFor="let animal of dogSelect">
+      <div *ngFor="let animal of animal.animals" class="animal-card">
+        <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>
+        <div class="animal-name">{{animal.name}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="animal" *ngIf="catSelect">
+    <div *ngFor="let animal of catSelect">
+      <div *ngFor="let animal of animal.animals" class="animal-card">
+        <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>
+        <div class="animal-name">{{animal.name}}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="animal">
+    <div *ngFor="let animal of animalMenu" class="animal-card">
+      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>
+      <div class="animal-name">{{animal.name}}</div>
+    </div>
+    <!--  <div class="animal">-->
+    <!--    <div *ngFor="let animal of animals" class="animal-card">-->
+    <!--      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>-->
+    <!--      <div class="animal-name">{{animal.animalCode}}.{{animal.name}}</div>-->
+    <!--    </div>-->
+    <!--  </div>-->
+  </div>

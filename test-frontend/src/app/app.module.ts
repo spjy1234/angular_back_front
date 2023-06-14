@@ -13,6 +13,7 @@ import { AnimalComponent } from './animal/animal.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,7 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     MainComponent,
     FootComponent,
     PersonComponent,
-    AnimalComponent
+    AnimalComponent,
   ],
   imports: [
     BrowserModule,

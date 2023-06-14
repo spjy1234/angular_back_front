@@ -19,15 +19,22 @@ export class PersonService {
     return this.personRepo.find();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} person`;
+  async findOne(id: number) {
+    return await this.personRepo.findOne({ where: { id } });
   }
 
-  update(id: number, updatePersonDto: UpdatePersonDto) {
-    return `This action updates a #${id} person`;
+  async update(id: number, updatePersonDto: UpdatePersonDto) {
+    const person = await this.personRepo.findOne({ where: { id } });
+    for (const key in updatePersonDto) {
+      if (key in person) {
+        person[key] = updatePersonDto[key];
+      }
+    }
+    return this.personRepo.save(person);
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} person`;
+  async remove(id: number) {
+    const person = await this.personRepo.findOne({ where: { id } });
+    return this.personRepo.remove(person);
   }
 }
