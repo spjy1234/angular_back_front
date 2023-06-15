@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df28b8e9-085c-4ecb-8a08-19a6710d9f26" name="Changes" comment="first commit">
-      <change beforePath="$PROJECT_DIR$/test-backend/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-backend/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-backend/src/dataBase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-backend/src/dataBase.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-backend/src/person/dto/update-person.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-backend/src/person/dto/update-person.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-backend/src/person/person.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-backend/src/person/person.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal-menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal-menu.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/api.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +35,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/JUNYOUNG/angular/angular-newproject",
+    "last_opened_file_path": "C:/Users/JUNYOUNG/angular/angular-fri2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,7 +57,9 @@
       <workItem from="1686615507698" duration="14797000" />
       <workItem from="1686643854856" duration="697000" />
       <workItem from="1686645496358" duration="1614000" />
-      <workItem from="1686700874026" duration="28712000" />
+      <workItem from="1686700874026" duration="28764000" />
+      <workItem from="1686787119494" duration="8438000" />
+      <workItem from="1686795747641" duration="669000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1686645814473</created>

@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Person} from "./person";
 import {Animal} from "./animal";
 import {AnimalMenu} from "./animal-menu";
+import {Observable} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
@@ -38,6 +39,6 @@ export class ApiService {
   }
 
   selectAnimalMenu(id:number){
-    return this.http.get<AnimalMenu[]>(this.animalMenu+id);
+    return this.http.get<AnimalMenu>(this.animalMenu+id);
   }
 }

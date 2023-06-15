@@ -1,7 +1,7 @@
 import {Animal} from "./animal";
 
 export interface AnimalMenu {
-  id?: number;
-  code?: string;
+  id: number;
+  code: string;
   animals: Animal[];
 }

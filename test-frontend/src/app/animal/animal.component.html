@@ -2,38 +2,46 @@
 
 <div class="test">
   <div class="animal-menu">
+    <div (click)="selectAnimal(0)">all</div>
     <div *ngFor="let menu of animalMenu">
       <div (click)="selectAnimal(menu.id)">{{menu.code}}</div>
     </div>
   </div>
-
-  <div class="animal" *ngIf="dogSelect">
-    <div *ngFor="let animal of dogSelect">
-      <div *ngFor="let animal of animal.animals" class="animal-card">
+  <div class="infinte">
+    <div class="animal" *ngIf="allAnimal$ | async as animals">
+      <div class="animal-card" *ngFor="let animal of animals">
         <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>
         <div class="animal-name">{{animal.name}}</div>
       </div>
     </div>
   </div>
+  <!--  <div class="animal" *ngIf="dogSelect$ | async as animals">-->
+  <!--    <div class="animal-card" *ngFor="let animal of animals">-->
+  <!--      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>-->
+  <!--      <div class="animal-name">{{animal.name}}</div>-->
+  <!--    </div>-->
+  <!--  </div>-->
 
-  <div class="animal" *ngIf="catSelect">
-    <div *ngFor="let animal of catSelect">
-      <div *ngFor="let animal of animal.animals" class="animal-card">
-        <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>
-        <div class="animal-name">{{animal.name}}</div>
-      </div>
-    </div>
-  </div>
+  <!--  <div class="animal" *ngIf="catSelect$ | async as animals">-->
+  <!--    <div class="animal-card" *ngFor="let animal of animals">-->
+  <!--      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>-->
+  <!--      <div class="animal-name">{{animal.name}}</div>-->
+  <!--    </div>-->
+  <!--  </div>-->
 
-  <div class="animal">
-    <div *ngFor="let animal of animalMenu" class="animal-card">
-      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>
-      <div class="animal-name">{{animal.name}}</div>
-    </div>
-    <!--  <div class="animal">-->
-    <!--    <div *ngFor="let animal of animals" class="animal-card">-->
-    <!--      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>-->
-    <!--      <div class="animal-name">{{animal.animalCode}}.{{animal.name}}</div>-->
-    <!--    </div>-->
-    <!--  </div>-->
-  </div>
+
+  <!--  <div class="animal" *ngFor="let animal of animalMenu">-->
+  <!--    <div *ngFor="let animal of animal.animals" class="animal-card">-->
+  <!--      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>-->
+  <!--      <div class="animal-name">{{animal.name}}</div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+  <!--  <div class="animal">-->
+  <!--    <div *ngFor="let animal of animals" class="animal-card">-->
+  <!--      <div><img src="{{animal.imgPath}}" alt="animalImage" class="animal-img"></div>-->
+  <!--      <div class="animal-name">{{animal.animalCode}}.{{animal.name}}</div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+
+</div>
