@@ -12,6 +12,10 @@ import {PersonComponent} from './person/person.component';
 import {AnimalComponent} from './animal/animal.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatListModule} from "@angular/material/list";
+import {InputTextModule} from "primeng/inputtext";
+import {InfiniteScrollModule} from "ngx-infinite-scroll";
 
 @NgModule({
   declarations: [
@@ -30,6 +34,9 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     FormsModule,
     ReactiveFormsModule,
     MatFormFieldModule,
+    MatDividerModule,
+    MatListModule,
+    InputTextModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

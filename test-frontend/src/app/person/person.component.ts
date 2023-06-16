@@ -3,6 +3,7 @@ import {ApiService} from "../api.service";
 import {Person} from "../person";
 import {HttpClient} from "@angular/common/http";
 import {map} from "rxjs";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-person',
@@ -12,6 +13,39 @@ import {map} from "rxjs";
 export class PersonComponent implements OnInit, OnDestroy {
   persons: Person[] = [];
 
+  createForm:FormGroup = this.fb.group({
+    firstName: ['test', [Validators.required, Validators.pattern("^[a-zA-Z]*")]],
+    lastName: ['test', [Validators.required, Validators.pattern("^[a-zA-Z]*")]],
+    age: [0, [Validators.required, Validators.max(150)]],
+    sex: ["male", [Validators.required, Validators.pattern("male")]],
+  })
+
+  postForm(){
+    console.log(this.createForm.value)
+    const test: any = {
+      "firstName": this.createForm.value.firstName,
+      "lastName": this.createForm.value.lastName,
+      "age": this.createForm.value.age,
+      "sex": this.createForm.value.sex
+    };
+    console.log(test)
+    const test1: Person = test;
+    console.log(test1)
+
+    for(let keys in this.persons){
+      for(let key in this.persons[keys]){
+        if(key == "firstName"){
+          if(this.persons[keys][key] == this.createForm.value.firstName){
+            alert("다른값을 입력해주세요")
+          }
+        }
+      }
+    }
+
+    // this.apiService.postPerson(test1).subscribe();
+
+  }
+
   ngOnInit() {
     this.getPerson()
   }
@@ -20,13 +54,20 @@ export class PersonComponent implements OnInit, OnDestroy {
 
   }
 
-  constructor(private apiService: ApiService, private http: HttpClient) {
+  constructor(
+    private apiService: ApiService,
+    private http: HttpClient,
+    private fb: FormBuilder
+    ) {
+
   }
 
   getPerson() {
     this.apiService.getPerson().subscribe(data => {
       this.persons = data;
+
     })
+
   }
 
   sendPerson(data: any) {

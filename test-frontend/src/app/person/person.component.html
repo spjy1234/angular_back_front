@@ -8,6 +8,8 @@
     <div>{{person.sex}}</div>
   </div>
 </div>
+
+
 <div class="form">
   <h1>testPost</h1>
   <form #c="ngForm" (ngSubmit)="sendPerson(c)" novalidate>
@@ -15,7 +17,7 @@
     <label>lastName:</label><input name="lastName" type="text" class="form-input" ngModel><br>
     <label>age:</label><input name="age" type="text" class="form-input" ngModel><br>
     <label>sex:</label><input name="sex" type="text" class="form-input" ngModel><br>
-    <button type="submit" mat-raised-button >Button</button>
+    <button type="submit" mat-raised-button>Button</button>
   </form>
 </div>
 
@@ -27,7 +29,7 @@
     <label>lastName:</label><input name="lastName" type="text" class="form-input" ngModel><br>
     <label>age:</label><input name="age" type="text" class="form-input" ngModel><br>
     <label>sex:</label><input name="sex" type="text" class="form-input" ngModel><br>
-    <button type="submit" mat-raised-button >Button</button>
+    <button type="submit" mat-raised-button>Button</button>
   </form>
 </div>
 
@@ -35,6 +37,14 @@
   <h1>testDelete</h1>
   <form #d="ngForm" (ngSubmit)="deletePerson(d)">
     <label>id:</label><input name="id" type="text" class="form-input" ngModel><br>
-    <button type="submit" mat-raised-button >Button</button>
+    <button type="submit" mat-raised-button>Button</button>
   </form>
 </div>
+
+<form [formGroup]="createForm" (ngSubmit)="postForm()">
+  <label>firstName:</label><input formControlName="firstName" type="text" class="form-input" ><br>
+  <label>lastName:</label><input formControlName="lastName" type="text" class="form-input" ><br>
+  <label>age:</label><input formControlName="age" type="number" class="form-input" ><br>
+  <label>sex:</label><input formControlName="sex" type="text" class="form-input" ><br>
+  <button [disabled]="!createForm.valid" type="submit" mat-raised-button>Button</button>
+</form>

@@ -8,11 +8,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal-menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal-menu.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/api.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,27 +27,30 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectId" id="2R7ye9CABPPm6TlpNxqxXwUcGWY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/JUNYOUNG/angular/angular-fri2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\JUNYOUNG\\angular\\angular-newproject\\test-backend\\node_modules\\prettier",
-    "ts.external.directory.path": "C:\\Users\\JUNYOUNG\\angular\\angular-newproject\\test-frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JUNYOUNG/angular/test0615&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\JUNYOUNG\\angular\\angular-newproject\\test-backend\\node_modules\\prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\JUNYOUNG\\angular\\angular-newproject\\test-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +64,10 @@
       <workItem from="1686645496358" duration="1614000" />
       <workItem from="1686700874026" duration="28764000" />
       <workItem from="1686787119494" duration="8438000" />
-      <workItem from="1686795747641" duration="669000" />
+      <workItem from="1686795747641" duration="6266000" />
+      <workItem from="1686804987330" duration="1267000" />
+      <workItem from="1686819204184" duration="1114000" />
+      <workItem from="1686873523094" duration="22751000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1686645814473</created>
@@ -73,6 +81,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
