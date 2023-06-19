@@ -2,8 +2,9 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ApiService} from "../api.service";
 import {Person} from "../person";
 import {HttpClient} from "@angular/common/http";
-import {map} from "rxjs";
-import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {checksex} from "./checkValidator";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-person',
@@ -12,15 +13,16 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class PersonComponent implements OnInit, OnDestroy {
   persons: Person[] = [];
+  subscription!: Subscription;
 
-  createForm:FormGroup = this.fb.group({
+  createForm: FormGroup = this.fb.group({
     firstName: ['test', [Validators.required, Validators.pattern("^[a-zA-Z]*")]],
     lastName: ['test', [Validators.required, Validators.pattern("^[a-zA-Z]*")]],
-    age: [0, [Validators.required, Validators.max(150)]],
-    sex: ["male", [Validators.required, Validators.pattern("male")]],
+    age: [0, [Validators.max(150)]],
+    sex: ['male', [checksex()]]
   })
 
-  postForm(){
+  postForm() {
     console.log(this.createForm.value)
     const test: any = {
       "firstName": this.createForm.value.firstName,
@@ -32,43 +34,30 @@ export class PersonComponent implements OnInit, OnDestroy {
     const test1: Person = test;
     console.log(test1)
 
-    for(let keys in this.persons){
-      for(let key in this.persons[keys]){
-        if(key == "firstName"){
-          if(this.persons[keys][key] == this.createForm.value.firstName){
-            alert("다른값을 입력해주세요")
-          }
+    for (let keys in this.persons) {
+      for (let key in this.persons[keys]) {
+        if (key == "firstName" && this.persons[keys][key] == this.createForm.value.firstName) {
+          alert(`${this.createForm.value.firstName}(은)는 있는 이름입니다.`)
         }
       }
     }
-
     // this.apiService.postPerson(test1).subscribe();
-
   }
 
   ngOnInit() {
-    this.getPerson()
+    this.subscription = this.apiService.getPerson().subscribe(data =>
+    this.persons = data)
   }
 
   ngOnDestroy() {
-
+    this.subscription.unsubscribe()
   }
 
   constructor(
     private apiService: ApiService,
     private http: HttpClient,
-    private fb: FormBuilder
-    ) {
-
-  }
-
-  getPerson() {
-    this.apiService.getPerson().subscribe(data => {
-      this.persons = data;
-
-    })
-
-  }
+    private fb: FormBuilder,
+  ) { }
 
   sendPerson(data: any) {
     const person: Person = {
@@ -91,7 +80,7 @@ export class PersonComponent implements OnInit, OnDestroy {
     for (let key in data.value) {
       if (data.value[key] != "" && key != "id") {
         test[key] = data.value[key]
-        if(key == "age"){
+        if (key == "age") {
           test[key] = parseInt(data.value[key])
         }
       }
@@ -102,7 +91,7 @@ export class PersonComponent implements OnInit, OnDestroy {
     console.log("Put")
   }
 
-  deletePerson(data:any){
+  deletePerson(data: any) {
     const id = parseInt(data.value.id);
     this.apiService.deletePerson(id).subscribe();
     console.log("delete");

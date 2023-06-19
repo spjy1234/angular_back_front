@@ -6,20 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="df28b8e9-085c-4ecb-8a08-19a6710d9f26" name="Changes" comment="first commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/animal/animal.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-backend/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/app/person/person.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/test-frontend/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,7 +29,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2R7ye9CABPPm6TlpNxqxXwUcGWY" />
   <component name="ProjectViewState">
@@ -67,7 +68,9 @@
       <workItem from="1686795747641" duration="6266000" />
       <workItem from="1686804987330" duration="1267000" />
       <workItem from="1686819204184" duration="1114000" />
-      <workItem from="1686873523094" duration="22751000" />
+      <workItem from="1686873523094" duration="22903000" />
+      <workItem from="1687132951456" duration="10512000" />
+      <workItem from="1687147847341" duration="1680000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1686645814473</created>

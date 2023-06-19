@@ -42,7 +42,7 @@
 </div>
 
 <form [formGroup]="createForm" (ngSubmit)="postForm()">
-  <label>firstName:</label><input formControlName="firstName" type="text" class="form-input" ><br>
+  <label>firstName:</label><input formControlName="firstName" type="text" class="form-input" required><br>
   <label>lastName:</label><input formControlName="lastName" type="text" class="form-input" ><br>
   <label>age:</label><input formControlName="age" type="number" class="form-input" ><br>
   <label>sex:</label><input formControlName="sex" type="text" class="form-input" ><br>
